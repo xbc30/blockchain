@@ -1,21 +1,21 @@
 ## Ethereum
 ![image](../pic/ethereum.png)
-### Infura Api
+### api
 > Infura常用api案例分析
 
-### Code
+### code
 > go-eth实战系列
 
-### Code Analysis MD
+### md
 > 源码分析文档
 
-### Pos-ETH
+### pos
 > POS版本的go-eth
 
-### Source Code
+### source
 > 源代码中文全解析版
 
-### Tech Utils
+### tech
 > eth常用实用工具/常用智能合约/源代码频繁出现的名词解释
 
 ### 后续

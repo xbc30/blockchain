@@ -23,4 +23,4 @@
 > 收录技术文章链接（来自链闻/巴比特/白话区块链等网站）
 
 ### 后续
-> 增加FileCoin/Polkadot等项目
+> 增加FileCoin/Polkadot/Eth2.0等项目
