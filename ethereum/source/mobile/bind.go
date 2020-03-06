@@ -68,11 +68,7 @@ func (opts *CallOpts) IsPending() bool    { return opts.opts.Pending }
 /*c（opts*callopts）getgaslimit（）int64返回0/*todo（karalabe）*/
 
 //没有身份保护，getContext无法可靠实现（https://github.com/golang/go/issues/16876）
-即使是这样，将GO上下文的细微部分解压缩到Java也是很困难的。
 //func（opts*callopts）getContext（）*context返回&context opts.opts.context
-
-func（opts*callopts）setpending（挂起bool）opts.opts.pending=挂起
-func（opts*callopts）setgaslimit（limit int64）/*todo（karalabe）*/ }
 
 func (opts *CallOpts) SetContext(context *Context) { opts.opts.Context = context.context }
 

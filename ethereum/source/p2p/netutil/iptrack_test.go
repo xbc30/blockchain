@@ -138,7 +138,7 @@ func TestIPTrackerForceGC(t *testing.T) {
 		clock.Run(rate)
 	}
 	if len(it.contact) > 2*max {
-		t.Errorf("contacts not GCed, have %d", len(it.contact))
+		t.Errorf("contracts not GCed, have %d", len(it.contact))
 	}
 	if len(it.statements) > 2*max {
 		t.Errorf("statements not GCed, have %d", len(it.statements))
