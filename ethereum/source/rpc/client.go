@@ -52,9 +52,9 @@ var (
 const (
 //超时
 	tcpKeepAliveInterval = 30 * time.Second
-defaultDialTimeout   = 10 * time.Second //如果上下文没有截止时间，则在拨号时使用
-defaultWriteTimeout  = 10 * time.Second //如果上下文没有截止时间，则用于调用
-subscribeTimeout     = 5 * time.Second  //总超时eth_subscribe，rpc_模块调用
+	defaultDialTimeout   = 10 * time.Second //如果上下文没有截止时间，则在拨号时使用
+	defaultWriteTimeout  = 10 * time.Second //如果上下文没有截止时间，则用于调用
+	subscribeTimeout     = 5 * time.Second  //总超时eth_subscribe，rpc_模块调用
 )
 
 const (
@@ -118,29 +118,29 @@ type Client struct {
 	connectFunc func(ctx context.Context) (net.Conn, error)
 	isHTTP      bool
 
-//WRITECONN只能安全地访问外部调度，使用
-//写入锁定保持。通过发送
-//请求操作并通过发送发送完成释放。
+	//WRITECONN只能安全地访问外部调度，使用
+	//写入锁定保持。通过发送
+	//请求操作并通过发送发送完成释放。
 	writeConn net.Conn
 
-//派遣
+	//派遣
 	close       chan struct{}
-closing     chan struct{}                  //客户端退出时关闭
-didClose    chan struct{}                  //客户端退出时关闭
-reconnected chan net.Conn                  //写入/重新连接发送新连接的位置
-readErr     chan error                     //读取错误
-readResp    chan []*jsonrpcMessage         //读取的有效消息
-requestOp   chan *requestOp                //用于注册响应ID
-sendDone    chan error                     //信号写入完成，释放写入锁定
-respWait    map[string]*requestOp          //主动请求
-subs        map[string]*ClientSubscription //活动订阅
+	closing     chan struct{}                  //客户端退出时关闭
+	didClose    chan struct{}                  //客户端退出时关闭
+	reconnected chan net.Conn                  //写入/重新连接发送新连接的位置
+	readErr     chan error                     //读取错误
+	readResp    chan []*jsonrpcMessage         //读取的有效消息
+	requestOp   chan *requestOp                //用于注册响应ID
+	sendDone    chan error                     //信号写入完成，释放写入锁定
+	respWait    map[string]*requestOp          //主动请求
+	subs        map[string]*ClientSubscription //活动订阅
 }
 
 type requestOp struct {
 	ids  []json.RawMessage
 	err  error
-resp chan *jsonrpcMessage //接收最多len（id）响应
-sub  *ClientSubscription  //仅为ethsubscribe请求设置
+	resp chan *jsonrpcMessage //接收最多len（id）响应
+	sub  *ClientSubscription  //仅为ethsubscribe请求设置
 }
 
 func (op *requestOp) wait(ctx context.Context) (*jsonrpcMessage, error) {

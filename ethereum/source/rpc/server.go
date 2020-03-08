@@ -106,7 +106,7 @@ func (s *Server) RegisterName(name string, rcvr interface{}) error {
 		return fmt.Errorf("Service %T doesn't have any suitable methods/subscriptions to expose", rcvr)
 	}
 
-//已在给定名称下注册了以前的服务，合并方法/订阅
+	//已在给定名称下注册了以前的服务，合并方法/订阅
 	if regsvc, present := s.services[name]; present {
 		for _, m := range methods {
 			regsvc.callbacks[formatName(m.method.Name)] = m
