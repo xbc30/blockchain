@@ -1,5 +1,15 @@
 ## RLP
-> RLP（Recursive Length Rrefix, 递归长度前缀）提供了一种适用于任意二进制数据数组的编码，RLP已经称为以太坊中对对象进行序列化的主要编码方式。RLP的唯一目标就是解决结构体的编码问题；对原子数据类型（比如：字符串，整数型，浮点型）的编码则交给更高层的协议；以太坊中要求数字必须是一个大端字节序的、没有零占位的存储的格式(也就是说，一个整数0和一个空数组是等同的).RLP目的是可以将常用的数据结构,uint,string,[]byte,struct,slice,array,big.int等序列化以及反序列化.
+> RLP（Recursive Length Rrefix, 递归长度前缀）提供了一种适用于任意二进制数据数组的编码，RLP已经称为以太坊中对对象进行序列化的主要编码方式。RLP的唯一目标就是解决结构体的编码问题；对原子数据类型（比如：字符串，整数型，浮点型）的编码则交给更高层的协议；以太坊中要求数字必须是一个大端字节序的、没有零占位的存储的格式(也就是说，一个整数0和一个空数组是等同的).RLP目的是可以将常用的数据结构,uint,string,[]byte,struct,slice,array,big.int等序列化以及反序列化.与其他序列化方法相比，RLP编码的优点在于使用了灵活的长度前缀来表示数据的实际长度，并且使用递归的方式能编码相当大的数据，当接收或者解码经过RLP编码后的数据时，根据第1个字节就能推断数据的类型、大概长度和数据本身等信息。而其他的序列化方法， 不能根据第1个字节获得如此多的信息量                                                                                                                                                                                                                                                                                                                                                                                                                     
+  
+**数据定义:**  
+
+RLP编码的定义只处理以下2类底层数据：
+
+* 字符串（string）是指字节数组。例如，空串”“，再如单词”cat”，以及句子”Lorem ipsum dolor sit amet, consectetur adipisicing elit”等。
+
+* 列表（list）是一个可嵌套结构，里面可包含字符串和列表。例如，空列表[]，再如一个包含两个字符串的列表[“cat”,”dog”]，再比如嵌套列表的复杂列表[“cat”, [“puppy”, “cow”], “horse”, [[]], “pig”, [“”], “sheep”]。
+
+所有上层类型的数据需要转成以上的2类数据，才能进行RLP编码。转换的规则RLP编码不统一规定，可以自定义转换规则。例如struct可以转成列表；int可以转成二进制序列（属于字符串这一类, 必须去掉首部0，必须用大端模式表示）；map类型可以转换为由k和v组成的结构体、k按字典顺序排列的列表：[[k1,v1],[k2,v2]…] 等
   
 **五个规则:**
 
@@ -43,7 +53,80 @@
 
 ```
 
-**原理过程:**
+**关键函数:**
+* encode
+```go
+func Encode(w io.Writer, val interface{}) error {
+	if outer, ok := w.(*encbuf); ok {
+		// Encode was called by some type's EncodeRLP.
+		// Avoid copying by writing to the outer encbuf directly.
+		return outer.encode(val)
+	}
+	eb := encbufPool.Get().(*encbuf)
+	defer encbufPool.Put(eb)
+	eb.reset()
+	if err := eb.encode(val); err != nil {
+		return err
+	}
+	return eb.toWriter(w)
+}
+
+// EncodeToBytes returns the RLP encoding of val.
+// Please see the documentation of Encode for the encoding rules.
+func EncodeToBytes(val interface{}) ([]byte, error) {
+	eb := encbufPool.Get().(*encbuf)
+	defer encbufPool.Put(eb)
+	eb.reset()
+	if err := eb.encode(val); err != nil {
+		return nil, err
+	}
+	return eb.toBytes(), nil
+}
+
+// EncodeToReader returns a reader from which the RLP encoding of val
+// can be read. The returned size is the total size of the encoded
+// data.
+//
+// Please see the documentation of Encode for the encoding rules.
+func EncodeToReader(val interface{}) (size int, r io.Reader, err error) {
+	eb := encbufPool.Get().(*encbuf)
+	eb.reset()
+	if err := eb.encode(val); err != nil {
+		return 0, nil, err
+	}
+	return eb.size(), &encReader{buf: eb}, nil
+}
+```
+
+* decode
+
+```go
+func Decode(r io.Reader, val interface{}) error {
+	stream := streamPool.Get().(*Stream)
+	defer streamPool.Put(stream)
+
+	stream.Reset(r, 0)
+	return stream.Decode(val)
+}
+
+// DecodeBytes parses RLP data from b into val.
+// Please see the documentation of Decode for the decoding rules.
+// The input must contain exactly one value and no trailing data.
+func DecodeBytes(b []byte, val interface{}) error {
+	r := bytes.NewReader(b)
+	stream := streamPool.Get().(*Stream)
+	defer streamPool.Put(stream)
+
+	stream.Reset(r, uint64(len(b)))
+	if err := stream.Decode(val); err != nil {
+		return err
+	}
+	if r.Len() > 0 {
+		return ErrMoreThanOneValue
+	}
+	return nil
+}
+```
 
 **例子:**
 ```go
