@@ -8,13 +8,13 @@
 > 以太坊常用API分析/代码实战/代码分析文档/源代码中文解析/工具
 
 ### cosmos
-> tendermint
+> tendermint/cosmos hub
 
 ### fabric
 > fabric桌面版客户端/UI优化版的explorer
 
 ### defi
-> Compound/PoolTogether/Uniswap主流DeFi开源的智能合约
+> Compound/PoolTogether/Uniswap主流DeFi开源的智能合约以及预言机ChainLink
 
 ### dapp
 > ETH/EOS/TRON/IOST智能合约开发常用工具及网站
@@ -23,4 +23,4 @@
 > 收录技术文章链接（来自链闻/巴比特/白话区块链等网站）
 
 ### 后续
-> 增加FileCoin/Polkadot/Eth2.0等项目
+> FileCoin/Polkadot/Eth2.0等项目

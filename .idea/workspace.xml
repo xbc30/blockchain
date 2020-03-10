@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cebbdaba-ebb0-424d-a839-0aa93da31e5c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/defi/ChainLink/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ethereum/code/utils/rlp/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ethereum/code/utils/rlp/decode.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ethereum/code/utils/rlp/encode.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/defi/ChainLink/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/defi/ChainLink/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,22 +31,22 @@
         <counts>
           <entry key="cpp" value="1" />
           <entry key="gitignore" value="2" />
-          <entry key="go" value="4" />
+          <entry key="go" value="8" />
           <entry key="hpp" value="1" />
           <entry key="html" value="1" />
           <entry key="js" value="1" />
           <entry key="lock" value="1" />
-          <entry key="md" value="38" />
+          <entry key="md" value="40" />
           <entry key="sol" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="C++" value="2" />
-          <entry key="Go" value="4" />
+          <entry key="Go" value="8" />
           <entry key="HTML" value="1" />
           <entry key="JavaScript" value="1" />
-          <entry key="Markdown" value="38" />
+          <entry key="Markdown" value="40" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="Solidity file" value="3" />
           <entry key="yarn.lock" value="1" />
@@ -53,15 +57,15 @@
           <entry key="gitignore" value="10" />
           <entry key="go" value="12" />
           <entry key="html" value="31" />
-          <entry key="md" value="3157" />
+          <entry key="md" value="3549" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Go" value="33" />
           <entry key="HTML" value="31" />
-          <entry key="JavaScript" value="6" />
-          <entry key="Markdown" value="3130" />
+          <entry key="JavaScript" value="20" />
+          <entry key="Markdown" value="3508" />
           <entry key="PLAIN_TEXT" value="10" />
         </counts>
       </usages-collector>
@@ -73,80 +77,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="18">
-                <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="21" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ethereum/code/utils/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="54">
-                <caret line="3" column="14" lean-forward="true" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ethereum/md/rpc源码分析.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SECOND">
-              <first_editor />
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ethereum/source/rpc/server.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="994">
-              <caret line="122" column="30" lean-forward="true" selection-start-line="122" selection-start-column="30" selection-end-line="122" selection-end-column="30" />
-              <folding>
-                <element signature="e#982#1229#0" />
-                <element signature="e#1387#1508#0" />
-                <element signature="e#2957#4783#0" />
-                <element signature="e#4946#5031#0" />
-                <element signature="e#5219#5265#0" />
-                <element signature="e#5367#5604#0" />
-                <element signature="e#5749#6046#0" />
-                <element signature="e#6172#8238#0" />
-                <element signature="e#8351#8706#0" />
-                <element signature="e#8857#9390#0" />
-                <element signature="e#9555#11621#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ethereum/source/rpc/client.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="633">
-              <caret line="220" column="53" lean-forward="true" selection-start-line="220" selection-start-column="53" selection-end-line="220" selection-end-column="53" />
-              <folding>
-                <element signature="e#5334#5530#0" />
-                <element signature="e#5582#5689#0" />
-                <element signature="e#6209#6744#0" />
-                <element signature="e#6921#6988#0" />
-                <element signature="e#7243#8189#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ethereum/code/utils/并发安全.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="216">
-                <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+              <first_editor relative-caret-position="450">
+                <caret line="25" column="21" lean-forward="true" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
               </first_editor>
               <second_editor />
             </state>
@@ -154,11 +86,11 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/defi/ChainLink/README.md">
+        <entry file="file://$PROJECT_DIR$/ethereum/code/utils/并发安全.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="360">
-                <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+              <first_editor relative-caret-position="216">
+                <caret line="12" column="58" lean-forward="true" selection-start-line="12" selection-start-column="58" selection-end-line="12" selection-end-column="58" />
               </first_editor>
               <second_editor />
             </state>
@@ -166,11 +98,92 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ethereum/code/rpc/gRPC.md">
+        <entry file="file://$PROJECT_DIR$/ethereum/md/rlp文件解析.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="324">
-                <caret line="18" column="43" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
+            <state split_layout="SPLIT">
+              <first_editor />
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ethereum/source/tests/rlp_test_util.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="298">
+              <caret line="114" column="7" selection-start-line="114" selection-start-column="7" selection-end-line="114" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ethereum/source/common/hexutil/hexutil.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="67" column="24" lean-forward="true" selection-start-line="67" selection-start-column="24" selection-end-line="67" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ethereum/code/utils/rlp/encode.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+              <folding>
+                <element signature="e#751#805#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ethereum/code/utils/rlp/decode.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1836">
+              <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+              <folding>
+                <element signature="e#751#863#0" expanded="true" />
+                <element signature="e#5764#5962#0" />
+                <element signature="e#6020#6600#0" />
+                <element signature="e#6936#7911#0" />
+                <element signature="e#7969#8053#0" />
+                <element signature="e#8107#8253#0" />
+                <element signature="e#8307#8420#0" />
+                <element signature="e#8476#8600#0" />
+                <element signature="e#8661#8700#0" />
+                <element signature="e#8756#9082#0" />
+                <element signature="e#9150#10113#0" />
+                <element signature="e#10189#10459#0" />
+                <element signature="e#10536#11068#0" />
+                <element signature="e#11144#11573#0" />
+                <element signature="e#11632#11747#0" />
+                <element signature="e#11806#12718#0" />
+                <element signature="e#12778#13302#0" />
+                <element signature="e#13444#13800#0" />
+                <element signature="e#13802#13871#0" />
+                <element signature="e#14125#14795#0" />
+                <element signature="e#14905#15355#0" />
+                <element signature="e#15539#15596#0" />
+                <element signature="e#15653#16052#0" />
+                <element signature="e#16207#16362#0" />
+                <element signature="e#16508#16547#0" />
+                <element signature="e#17583#17641#0" />
+                <element signature="e#18392#18447#0" />
+                <element signature="e#18613#18690#0" />
+                <element signature="e#18901#19284#0" />
+                <element signature="e#19390#19923#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ethereum/code/utils/rlp/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="378">
+                <caret line="45" column="7" selection-start-line="45" selection-start-column="7" selection-end-line="45" selection-end-column="7" />
               </first_editor>
               <second_editor />
             </state>
@@ -183,9 +196,6 @@
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="730">
                 <caret line="140" column="1" selection-start-line="140" selection-start-column="1" selection-end-line="140" selection-end-column="1" />
-                <folding>
-                  <element signature="e#13#80#0" expanded="true" />
-                </folding>
               </first_editor>
               <second_editor />
             </state>
@@ -196,7 +206,7 @@
         <entry file="file://$PROJECT_DIR$/ethereum/code/utils/key/bip39.go">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="342">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
               <folding>
                 <element signature="e#192#386#0" expanded="true" />
               </folding>
@@ -217,9 +227,12 @@
     <findStrings>
       <find>contact</find>
       <find>Mu</find>
+      <find>decode</find>
+      <find>rlp</find>
     </findStrings>
     <dirStrings>
       <dir>H:\now-project\blockchain</dir>
+      <dir>H:\now-project\blockchain\ethereum</dir>
       <dir>H:\now-project\blockchain\ethereum\source</dir>
     </dirStrings>
   </component>
@@ -242,7 +255,6 @@
         <option value="$PROJECT_DIR$/dapp/TRON/README.md" />
         <option value="$PROJECT_DIR$/dapp/IOST/README.md" />
         <option value="$PROJECT_DIR$/dapp/ETH/README.md" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/cosmos/README.md" />
         <option value="$PROJECT_DIR$/dapp/EOS/README.md" />
         <option value="$PROJECT_DIR$/dapp/EOS/dice.hpp" />
@@ -260,6 +272,8 @@
         <option value="$PROJECT_DIR$/ethereum/source/rpc/client.go" />
         <option value="$PROJECT_DIR$/ethereum/code/utils/并发安全.md" />
         <option value="$PROJECT_DIR$/defi/ChainLink/README.md" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/ethereum/code/utils/rlp/README.md" />
       </list>
     </option>
   </component>
@@ -274,10 +288,9 @@
       <path value="$PROJECT_DIR$/ethereum/source/dashboard/assets/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="106" />
-    <option name="y" value="59" />
-    <option name="width" value="1658" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="509" />
+    <option name="width" value="1418" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -320,43 +333,13 @@
             <path>
               <item name="blockchain" type="b2602c69:ProjectViewProjectNode" />
               <item name="blockchain" type="462c0819:PsiDirectoryNode" />
-              <item name="defi" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blockchain" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blockchain" type="462c0819:PsiDirectoryNode" />
-              <item name="defi" type="462c0819:PsiDirectoryNode" />
-              <item name="ChainLink" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blockchain" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blockchain" type="462c0819:PsiDirectoryNode" />
-              <item name="defi" type="462c0819:PsiDirectoryNode" />
-              <item name="Compound" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blockchain" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blockchain" type="462c0819:PsiDirectoryNode" />
               <item name="ethereum" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blockchain" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blockchain" type="462c0819:PsiDirectoryNode" />
-              <item name="ethereum" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="blockchain" type="b2602c69:ProjectViewProjectNode" />
               <item name="blockchain" type="462c0819:PsiDirectoryNode" />
               <item name="ethereum" type="462c0819:PsiDirectoryNode" />
               <item name="code" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blockchain" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blockchain" type="462c0819:PsiDirectoryNode" />
-              <item name="ethereum" type="462c0819:PsiDirectoryNode" />
-              <item name="code" type="462c0819:PsiDirectoryNode" />
-              <item name="rpc" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="blockchain" type="b2602c69:ProjectViewProjectNode" />
@@ -369,7 +352,9 @@
               <item name="blockchain" type="b2602c69:ProjectViewProjectNode" />
               <item name="blockchain" type="462c0819:PsiDirectoryNode" />
               <item name="ethereum" type="462c0819:PsiDirectoryNode" />
-              <item name="tech" type="462c0819:PsiDirectoryNode" />
+              <item name="code" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="rlp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="blockchain" type="b2602c69:ProjectViewProjectNode" />
@@ -401,11 +386,11 @@
       <recent name="H:\now-project\blockchain\defi" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="H:\now-project\blockchain\ethereum\code\utils\rlp" />
       <recent name="H:\now-project\blockchain\defi\ChainLink" />
       <recent name="H:\now-project\blockchain\ethereum\code\utils\key" />
       <recent name="H:\now-project\blockchain\dapp\EOS" />
       <recent name="H:\now-project\blockchain\dapp\ETH" />
-      <recent name="H:\now-project\blockchain\dapp\IOST" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -701,39 +686,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="18">
-            <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="21" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ethereum/code/utils/key/bip39.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="e#192#386#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ethereum/code/utils/key/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="730">
-            <caret line="140" column="1" selection-start-line="140" selection-start-column="1" selection-end-line="140" selection-end-column="1" />
-            <folding>
-              <element signature="e#13#80#0" expanded="true" />
-            </folding>
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ethereum/code/rpc/gRPC.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
@@ -755,7 +707,7 @@
     <entry file="file://$PROJECT_DIR$/ethereum/source/rpc/server.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="994">
-          <caret line="122" column="30" lean-forward="true" selection-start-line="122" selection-start-column="30" selection-end-line="122" selection-end-column="30" />
+          <caret line="122" column="30" selection-start-line="122" selection-start-column="30" selection-end-line="122" selection-end-column="30" />
           <folding>
             <element signature="e#982#1229#0" />
             <element signature="e#1387#1508#0" />
@@ -775,7 +727,7 @@
     <entry file="file://$PROJECT_DIR$/ethereum/source/rpc/client.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="633">
-          <caret line="220" column="53" lean-forward="true" selection-start-line="220" selection-start-column="53" selection-end-line="220" selection-end-column="53" />
+          <caret line="220" column="53" selection-start-line="220" selection-start-column="53" selection-end-line="220" selection-end-column="53" />
           <folding>
             <element signature="e#5334#5530#0" />
             <element signature="e#5582#5689#0" />
@@ -790,17 +742,7 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="54">
-            <caret line="3" column="14" lean-forward="true" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ethereum/code/utils/并发安全.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="216">
-            <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+            <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
           </first_editor>
           <second_editor />
         </state>
@@ -809,8 +751,129 @@
     <entry file="file://$PROJECT_DIR$/defi/ChainLink/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="360">
-            <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+          <first_editor relative-caret-position="730">
+            <caret line="99" lean-forward="true" selection-start-line="99" selection-end-line="99" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="450">
+            <caret line="25" column="21" lean-forward="true" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ethereum/code/utils/key/bip39.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#192#386#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ethereum/code/utils/key/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="730">
+            <caret line="140" column="1" selection-start-line="140" selection-start-column="1" selection-end-line="140" selection-end-column="1" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ethereum/md/rlp文件解析.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ethereum/source/tests/rlp_test_util.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="114" column="7" selection-start-line="114" selection-start-column="7" selection-end-line="114" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ethereum/source/common/hexutil/hexutil.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="67" column="24" lean-forward="true" selection-start-line="67" selection-start-column="24" selection-end-line="67" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ethereum/code/utils/rlp/encode.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+          <folding>
+            <element signature="e#751#805#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ethereum/code/utils/rlp/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="378">
+            <caret line="45" column="7" selection-start-line="45" selection-start-column="7" selection-end-line="45" selection-end-column="7" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ethereum/code/utils/rlp/decode.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1836">
+          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+          <folding>
+            <element signature="e#751#863#0" expanded="true" />
+            <element signature="e#5764#5962#0" />
+            <element signature="e#6020#6600#0" />
+            <element signature="e#6936#7911#0" />
+            <element signature="e#7969#8053#0" />
+            <element signature="e#8107#8253#0" />
+            <element signature="e#8307#8420#0" />
+            <element signature="e#8476#8600#0" />
+            <element signature="e#8661#8700#0" />
+            <element signature="e#8756#9082#0" />
+            <element signature="e#9150#10113#0" />
+            <element signature="e#10189#10459#0" />
+            <element signature="e#10536#11068#0" />
+            <element signature="e#11144#11573#0" />
+            <element signature="e#11632#11747#0" />
+            <element signature="e#11806#12718#0" />
+            <element signature="e#12778#13302#0" />
+            <element signature="e#13444#13800#0" />
+            <element signature="e#13802#13871#0" />
+            <element signature="e#14125#14795#0" />
+            <element signature="e#14905#15355#0" />
+            <element signature="e#15539#15596#0" />
+            <element signature="e#15653#16052#0" />
+            <element signature="e#16207#16362#0" />
+            <element signature="e#16508#16547#0" />
+            <element signature="e#17583#17641#0" />
+            <element signature="e#18392#18447#0" />
+            <element signature="e#18613#18690#0" />
+            <element signature="e#18901#19284#0" />
+            <element signature="e#19390#19923#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ethereum/code/utils/并发安全.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="216">
+            <caret line="12" column="58" lean-forward="true" selection-start-line="12" selection-start-column="58" selection-end-line="12" selection-end-column="58" />
           </first_editor>
           <second_editor />
         </state>

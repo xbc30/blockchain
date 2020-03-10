@@ -95,3 +95,7 @@ contract ChainlinkExample is ChainlinkClient {
   }
 }
 ```
+
+[Chainlink预言机基本原理](https://blog.csdn.net/ChainlinkO/article/details/103784697?depth_1-utm_source=distribute.pc_relevant_right.none-task&utm_source=distribute.pc_relevant_right.none-task)
+
+![image](../../pic/chainlick_process.png)
