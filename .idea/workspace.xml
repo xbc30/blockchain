@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cebbdaba-ebb0-424d-a839-0aa93da31e5c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ethereum/code/p2p/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ethereum/code/p2p/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/ethereum/code/p2p/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,8 +19,9 @@
       <usages-collector id="statistics.lifecycle.project">
         <counts>
           <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -32,7 +33,7 @@
           <entry key="html" value="1" />
           <entry key="js" value="1" />
           <entry key="lock" value="1" />
-          <entry key="md" value="49" />
+          <entry key="md" value="50" />
           <entry key="sol" value="3" />
         </counts>
       </usages-collector>
@@ -42,7 +43,7 @@
           <entry key="Go" value="8" />
           <entry key="HTML" value="1" />
           <entry key="JavaScript" value="1" />
-          <entry key="Markdown" value="49" />
+          <entry key="Markdown" value="50" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="Solidity file" value="3" />
           <entry key="yarn.lock" value="1" />
@@ -53,7 +54,7 @@
           <entry key="gitignore" value="10" />
           <entry key="go" value="12" />
           <entry key="html" value="31" />
-          <entry key="md" value="3716" />
+          <entry key="md" value="3770" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -61,7 +62,7 @@
           <entry key="Go" value="33" />
           <entry key="HTML" value="31" />
           <entry key="JavaScript" value="20" />
-          <entry key="Markdown" value="3675" />
+          <entry key="Markdown" value="3729" />
           <entry key="PLAIN_TEXT" value="10" />
         </counts>
       </usages-collector>
@@ -69,18 +70,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ethereum/code/utils/go.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="270">
-                <caret line="15" column="8" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ethereum/md/p2p源码分析.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
@@ -118,7 +107,7 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="558">
-                <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+                <caret line="31" selection-start-line="31" selection-end-line="31" />
               </first_editor>
               <second_editor />
             </state>
@@ -139,25 +128,35 @@
         <entry file="file://$PROJECT_DIR$/ethereum/md/p2p-udp.go源码分析.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="-108" />
+              <first_editor />
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ethereum/code/p2p/README.md">
+        <entry file="file://$PROJECT_DIR$/ethereum/md/p2p-rlpx节点之间的加密链路.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="36">
-                <caret line="2" column="53" selection-start-line="2" selection-start-column="53" selection-end-line="2" selection-end-column="53" />
-              </first_editor>
+              <first_editor relative-caret-position="-54" />
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ethereum/code/p2p/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="198">
+                <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ethereum/code/utils/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
@@ -254,7 +253,7 @@
       <path value="$PROJECT_DIR$/ethereum/source/dashboard/assets/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="509" />
     <option name="width" value="1418" />
     <option name="height" value="1047" />
@@ -267,7 +266,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -300,10 +298,17 @@
               <item name="code" type="462c0819:PsiDirectoryNode" />
               <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="blockchain" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blockchain" type="462c0819:PsiDirectoryNode" />
+              <item name="ethereum" type="462c0819:PsiDirectoryNode" />
+              <item name="md" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -340,10 +345,10 @@
     </option>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17910448" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18070363" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -370,16 +375,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ethereum/md/a黄皮书里面出现的所有的符号索引.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="252">
-            <caret line="14" selection-start-line="14" selection-end-line="15" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ethereum/md/accounts源码分析.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -455,13 +450,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ethereum/source/dashboard/assets/yarn.lock">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="30" column="18" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/ethereum/source/dashboard/assets/yarn.lock" />
     <entry file="file://$PROJECT_DIR$/bitcoin/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -622,19 +611,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="994">
           <caret line="122" column="30" selection-start-line="122" selection-start-column="30" selection-end-line="122" selection-end-column="30" />
-          <folding>
-            <element signature="e#982#1229#0" />
-            <element signature="e#1387#1508#0" />
-            <element signature="e#2957#4783#0" />
-            <element signature="e#4946#5031#0" />
-            <element signature="e#5219#5265#0" />
-            <element signature="e#5367#5604#0" />
-            <element signature="e#5749#6046#0" />
-            <element signature="e#6172#8238#0" />
-            <element signature="e#8351#8706#0" />
-            <element signature="e#8857#9390#0" />
-            <element signature="e#9555#11621#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -642,13 +618,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="633">
           <caret line="220" column="53" selection-start-line="220" selection-start-column="53" selection-end-line="220" selection-end-column="53" />
-          <folding>
-            <element signature="e#5334#5530#0" />
-            <element signature="e#5582#5689#0" />
-            <element signature="e#6209#6744#0" />
-            <element signature="e#6921#6988#0" />
-            <element signature="e#7243#8189#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -676,9 +645,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="e#192#386#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -718,52 +684,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1088">
           <caret line="202" column="48" lean-forward="true" selection-start-line="202" selection-start-column="48" selection-end-line="202" selection-end-column="48" />
-          <folding>
-            <element signature="e#751#863#0" expanded="true" />
-            <element signature="e#5764#5962#0" />
-            <element signature="e#6020#6600#0" />
-            <element signature="e#6936#7911#0" />
-            <element signature="e#7969#8053#0" />
-            <element signature="e#8107#8253#0" />
-            <element signature="e#8307#8420#0" />
-            <element signature="e#8476#8600#0" />
-            <element signature="e#8661#8700#0" />
-            <element signature="e#8756#9082#0" />
-            <element signature="e#9150#10113#0" />
-            <element signature="e#10189#10459#0" />
-            <element signature="e#10536#11068#0" />
-            <element signature="e#11144#11573#0" />
-            <element signature="e#11632#11747#0" />
-            <element signature="e#11806#12718#0" />
-            <element signature="e#12778#13302#0" />
-            <element signature="e#13444#13800#0" />
-            <element signature="e#13802#13871#0" />
-            <element signature="e#14125#14795#0" />
-            <element signature="e#14905#15355#0" />
-            <element signature="e#15539#15596#0" />
-            <element signature="e#15653#16052#0" />
-            <element signature="e#16207#16362#0" />
-            <element signature="e#16508#16547#0" />
-            <element signature="e#16549#16618#0" />
-            <element signature="e#17179#17540#0" />
-            <element signature="e#17583#17641#0" />
-            <element signature="e#18392#18447#0" />
-            <element signature="e#18613#18690#0" />
-            <element signature="e#18901#19284#0" />
-            <element signature="e#19390#19923#0" />
-            <element signature="e#20231#20843#0" />
-            <element signature="e#21063#21279#0" />
-            <element signature="e#21531#21737#0" />
-            <element signature="e#21875#22157#0" />
-            <element signature="e#22380#22921#0" />
-            <element signature="e#23263#23946#0" />
-            <element signature="e#24521#25325#0" />
-            <element signature="e#25391#27571#0" />
-            <element signature="e#27626#28172#0" />
-            <element signature="e#28224#28452#0" />
-            <element signature="e#28496#28649#0" />
-            <element signature="e#28693#29005#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -771,10 +691,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-253">
           <caret line="53" column="61" lean-forward="true" selection-start-line="53" selection-start-column="61" selection-end-line="53" selection-end-column="61" />
-          <folding>
-            <element signature="e#751#805#0" expanded="true" />
-            <element signature="e#1069#1519#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -788,10 +704,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ethereum/code/utils/go.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="270">
+            <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ethereum/md/p2p源码分析.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="360">
+            <caret line="20" column="19" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="19" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ethereum/md/p2p-table.go源码分析.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ethereum/code/utils/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="54">
+            <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+          </first_editor>
           <second_editor />
         </state>
       </provider>
@@ -812,22 +758,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ethereum/md/p2p源码分析.md">
+    <entry file="file://$PROJECT_DIR$/ethereum/md/p2p-nat源码分析.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="360">
-            <caret line="20" column="19" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="19" />
+          <first_editor relative-caret-position="558">
+            <caret line="31" selection-start-line="31" selection-end-line="31" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ethereum/md/p2p-nat源码分析.md">
+    <entry file="file://$PROJECT_DIR$/ethereum/md/p2p-rlpx节点之间的加密链路.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="558">
-            <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
-          </first_editor>
+          <first_editor relative-caret-position="-54" />
           <second_editor />
         </state>
       </provider>
@@ -843,17 +787,7 @@
     <entry file="file://$PROJECT_DIR$/ethereum/md/p2p-udp.go源码分析.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-108" />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ethereum/code/utils/go.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="270">
-            <caret line="15" column="8" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
-          </first_editor>
+          <first_editor />
           <second_editor />
         </state>
       </provider>
@@ -861,18 +795,8 @@
     <entry file="file://$PROJECT_DIR$/ethereum/code/p2p/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="36">
-            <caret line="2" column="53" selection-start-line="2" selection-start-column="53" selection-end-line="2" selection-end-column="53" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ethereum/code/utils/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="54">
-            <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+          <first_editor relative-caret-position="198">
+            <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
           </first_editor>
           <second_editor />
         </state>
