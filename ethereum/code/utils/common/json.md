@@ -1,2 +1,7 @@
 ## JSON
 
+### uint
+
+### byte
+
+### big
