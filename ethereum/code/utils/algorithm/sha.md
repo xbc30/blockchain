@@ -1,6 +1,7 @@
-## SHA
+## SHA/RIPEMD
 
 ### SHA2 -> [SHA256](https://zhuanlan.zhihu.com/p/94619052)
+> SHA-224、SHA-256、SHA-384，和SHA-512并称为SHA-2,常用的是SHA-256
 
 **GO语言使用SHA256:**
 
@@ -19,7 +20,7 @@ func digest2(data []byte) ([]byte, error) {
 	return h.Sum(nil),nil
 }
 ```
-**GO语言原理过程实现:**
+**GO语言SHA256原理过程实现:**
 
 ![image](../../../../pic/sha256.png)
 ```go
@@ -145,3 +146,56 @@ func rightRotate(n uint32, d uint) uint32 {
 }
 ```
 
+### SHA3(keccak256)
+> SHA3采用Keccak算法，在很多场合下Keccak和SHA3是同义词，但在2015年8月SHA3最终完成标准化时，NIST调整了填充算法，标准的SHA3和原先的Keccak算法就有所区别了。在早期的Ethereum相关代码中，普遍使用SHA3代指Keccak256，为了避免和NIST标准的SHA3混淆，现在的代码直接使用Keccak256作为函数名
+
+> SHA-3并不是要取代SHA-2，因为SHA-2目前并没有出现明显的弱点,只是作为一个与之前算法不同的，可替换的加密杂凑算法
+
+```go
+package main
+
+import (
+	"encoding/hex"
+	"fmt"
+
+	"github.com/miguelmota/go-solidity-sha3"
+)
+
+func main() {
+	hash := solsha3.SoliditySHA3(
+		// types
+		[]string{"address", "uint256"},
+
+		// values
+		[]interface{}{
+			"0x935F7770265D0797B621c49A5215849c333Cc3ce",
+			"100000000000000000",
+		},
+	)
+
+	fmt.Println(hex.EncodeToString(hash))
+}
+```
+
+### RIPEMD160
+
+> RIPEMD160哈希值的输出值一般是16进制的字符串。而16进制字符串，每两个字符占一个字节。我们知道，一个字节=8bit.所以使用ripemd160加密函数所得到的是一个160bit的值
+
+```go
+package main
+
+import (
+    "fmt"
+    "golang.org/x/crypto/ripemd160"
+)
+
+func main() {
+    hasher := ripemd160.New()
+    hasher.Write([]byte("The quick brown fox jumps over the lazy dog"))
+    hashBytes := hasher.Sum(nil)
+    hashString := fmt.Sprintf("%x", hashBytes)
+    fmt.Println(hashString)
+}
+```
+
+### HMAC

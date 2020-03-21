@@ -151,3 +151,49 @@ func main() {
 	fmt.Println("验证结果：",verifySignECC)
 }
 ```
+
+**ECDSA**
+> 椭圆曲线数字签名算法（ECDSA）是使用椭圆曲线密码（ECC）对数字签名算法（DSA）的模拟
+
+```go
+package main
+
+import (
+    "crypto/ecdsa"
+    "crypto/rand"
+    "fmt"
+    "crypto/elliptic"
+    "log"
+)
+
+func main() {
+    // 生成公钥和私钥
+    privateKey, err := ecdsa.GenerateKey(elliptic.P256(), rand.Reader)
+    if err != nil {
+        log.Fatalln(err)
+    }
+    // 公钥是存在在私钥中的，从私钥中读取公钥
+    publicKey := &privateKey.PublicKey
+    message := []byte("hello,dsa签名")
+
+    // 进入签名操作
+    r, s, _ := ecdsa.Sign(rand.Reader, privateKey, message)
+    // 进入验证
+    flag := ecdsa.Verify(publicKey, message, r, s)
+    if flag {
+        fmt.Println("数据未被修改")
+    } else {
+        fmt.Println("数据被修改")
+    }
+    flag = ecdsa.Verify(publicKey, []byte("hello"), r, s)
+    if flag {
+        fmt.Println("数据未被修改")
+    } else {
+        fmt.Println("数据被修改")
+    }
+}
+```
+
+**Secp256k1和Secp256r1:**
+> Secp256k1是指比特币中使用的ECDSA(椭圆曲线数字签名算法)曲线的参数, ECC有多个参数用来调节速度和安全性，比特币和以太坊使用 secp256k1参数。Secp256k1和Secp256r1两者都是场 zp 上的椭圆曲线，其中 p 是256位素数（尽管每条曲线有不同的素数）。secp256k1中的 “k” 代表 Koblitz，sepc256r1中 的 “r” 代表 随机。Koblitz椭圆曲线具有一些特殊属性，可以更有效地实现组操作。据信存在小的安全权衡，更 “随机” 选择的参数更安全。然而，有些人怀疑随机系数可能已经被选择来提供后门。
+                                                                                     
