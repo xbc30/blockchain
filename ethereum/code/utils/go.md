@@ -1,4 +1,4 @@
-## 并发安全
+## go常用知识
 
 ### defer
 [go defer 的关键特性解读和示例](https://juejin.im/entry/5976cebd6fb9a06b9f46f9b4)
