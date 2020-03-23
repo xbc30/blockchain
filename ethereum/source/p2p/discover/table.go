@@ -49,21 +49,21 @@ import (
 )
 
 const (
-alpha           = 3  //Kademlia并发因子
-bucketSize      = 16 //卡德米利亚水桶尺寸
-maxReplacements = 10 //每个桶更换清单的尺寸
+	alpha           = 3  //Kademlia并发因子
+	bucketSize      = 16 //卡德米利亚水桶尺寸
+	maxReplacements = 10 //每个桶更换清单的尺寸
 
-//我们把桶放在距离的1/15以上，因为
-//我们不太可能遇到更近的节点。
+	//我们把桶放在距离的1/15以上，因为
+	//我们不太可能遇到更近的节点。
 	hashBits          = len(common.Hash{}) * 8
-nBuckets          = hashBits / 15       //桶数
-bucketMinDistance = hashBits - nBuckets //最近桶的对数距离
+	nBuckets          = hashBits / 15       //桶数
+	bucketMinDistance = hashBits - nBuckets //最近桶的对数距离
 
-//IP地址限制。
-bucketIPLimit, bucketSubnet = 2, 24 //最多2个地址来自同一个/24
+	//IP地址限制。
+	bucketIPLimit, bucketSubnet = 2, 24 //最多2个地址来自同一个/24
 	tableIPLimit, tableSubnet   = 10, 24
 
-maxFindnodeFailures = 5 //将删除超过此限制的节点
+	maxFindnodeFailures = 5 //将删除超过此限制的节点
 	refreshInterval     = 30 * time.Minute
 	revalidateInterval  = 10 * time.Second
 	copyNodesInterval   = 30 * time.Second
@@ -73,20 +73,20 @@ maxFindnodeFailures = 5 //将删除超过此限制的节点
 )
 
 type Table struct {
-mutex   sync.Mutex        //保护存储桶、存储桶内容、托儿所、兰特
-buckets [nBuckets]*bucket //已知节点的距离索引
-nursery []*node           //引导节点
-rand    *mrand.Rand       //随机性来源，定期重新播种
+	mutex   sync.Mutex        //保护存储桶、存储桶内容、托儿所、兰特
+	buckets [nBuckets]*bucket //已知节点的距离索引
+	nursery []*node           //引导节点
+	rand    *mrand.Rand       //随机性来源，定期重新播种
 	ips     netutil.DistinctNetSet
 
-db         *enode.DB //已知节点数据库
+	db         *enode.DB //已知节点数据库
 	net        transport
 	refreshReq chan chan struct{}
 	initDone   chan struct{}
 	closeReq   chan struct{}
 	closed     chan struct{}
 
-nodeAddedHook func(*node) //用于测试
+	nodeAddedHook func(*node) //用于测试
 }
 
 //传输由UDP传输实现。
@@ -102,8 +102,8 @@ type transport interface {
 //bucket包含按其上一个活动排序的节点。条目
 //最近激活的元素是条目中的第一个元素。
 type bucket struct {
-entries      []*node //实时条目，按上次联系时间排序
-replacements []*node //如果重新验证失败，则使用最近看到的节点
+	entries      []*node //实时条目，按上次联系时间排序
+	replacements []*nod		e //如果重新验证失败，则使用最近看到的节点
 	ips          netutil.DistinctNetSet
 }
 
