@@ -14,3 +14,12 @@
 
 ### reflect
 [Golang的反射reflect深入理解和示例](https://juejin.im/post/5a75a4fb5188257a82110544)
+
+### G-M-P
+[Go调度器原理](https://mp.weixin.qq.com/s/enjlUh9ldfpLUdU1VQFkRA)
+
+### OSS
+[minio搭建高性能对象存储](https://github.com/minio/minio)
+
+### select
+[一文掌握 Go 语言 Select 的四大用法](https://mp.weixin.qq.com/s/-i-PoCTPuhRpd4cAKpNwuw)
