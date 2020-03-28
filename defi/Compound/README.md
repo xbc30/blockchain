@@ -55,7 +55,7 @@ rDai -- 代币本息所有权分离
 
 * Exchange Rate(市场汇率)
 
-> exchangeRate = (getCash() + totalBorrows() - totalReserves()) / totalSupply()
+> exchangeRate = (getCash + totalBorrows - totalReserves) / totalSupply
 
 > 市场汇率 = ( 合约所剩储备金 + 总借贷 - 总准备金 ) / 总放贷
 
@@ -69,9 +69,9 @@ rDai -- 代币本息所有权分离
 > Reserve Factor = Reserve / totalSupply
 
 * Collateral Factor(抵押率)
-> 抵押物和乘以抵押因子即等于用户的可借贷数额
+> Collateral Factor = totalBorrowBalance / totalSupply
 
-##### 市场动态模型
+##### 风险模型
 
 1.从初始利率开始，每次发生交易时，资产的利率指数都会更新，以复利利息，某期间的利率（以r * t表示）使用逐块利率计算得出：
 
