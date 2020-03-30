@@ -23,3 +23,11 @@
 
 ### select
 [一文掌握 Go 语言 Select 的四大用法](https://mp.weixin.qq.com/s/-i-PoCTPuhRpd4cAKpNwuw)
+
+### 常量
+[类型常量和非类型常量](https://mp.weixin.qq.com/s/L6ysPUCyYhAwL6PsKXykhQ)
+
+### 数据结构
+[用Go构建不可变的数据结构](https://mp.weixin.qq.com/s/bCzAmt8LnOJgd46LNHZtTg)
+
+### proto3
