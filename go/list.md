@@ -31,3 +31,9 @@
 [用Go构建不可变的数据结构](https://mp.weixin.qq.com/s/bCzAmt8LnOJgd46LNHZtTg)
 
 ### proto3
+
+### interface
+[理解 go interface 的 5 个关键点](https://mp.weixin.qq.com/s?__biz=MzA4NzAzMjk4Mw==&mid=2247483733&idx=1&sn=9ef6e26c334599c0074a3fbe262d3a1b&chksm=903ed4ada7495dbbc3b4ec6feccf419cb2df9389b3227a45c6f1c8c350d033ba7960339b89da&scene=21#wechat_redirect)
+
+### ...语法糖
+[Go语法糖之‘...’ 的使用](https://studygolang.com/articles/15357)
