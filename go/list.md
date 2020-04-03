@@ -39,3 +39,11 @@
 
 ### ...语法糖
 [Go语法糖之‘...’ 的使用](https://studygolang.com/articles/15357)
+
+### 切片
+[一篇文章理解 golang 中切片与数组的关系](https://studygolang.com/articles/27012)
+
+### 值传递和引用传递
+[Golang 中的引用传递与值传递](https://studygolang.com/articles/23806?fr=sidebar)
+
+[GO语言基础---值传递与引用传递](https://www.cnblogs.com/yunweiqiang/p/12392331.html)

@@ -21,3 +21,9 @@
 
 * [sort](https://studygolang.com/articles/22644)
 > sort 包会依据实际数据自动选择最优的排序算法
+
+* [flag](https://studygolang.com/articles/27631#reply0)
+> go命令行工具
+
+* [strconv](https://www.jianshu.com/p/70e10c005430)
+> go官方内置的字符串和其他基本数据类型之间的转换
