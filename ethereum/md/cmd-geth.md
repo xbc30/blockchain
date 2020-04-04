@@ -424,7 +424,7 @@ dump 子命令可以移除一个或多个特定的区块,先根据区块号获�
 	if err != nil {
 		utils.Fatalf("Failed to create account: %v", err)
 	}
-	fmt.Printf("Address: {%x}\n", address)
+	fmt.Printf("Address: %x\n", address)
 	return nil
 }</code></pre>
 创建一个账户，成功后输出地址
@@ -460,7 +460,7 @@ dump 子命令可以移除一个或多个特定的区块,先根据区块号获�
 	if err != nil {
 		utils.Fatalf("Could not create the account: %v", err)
 	}
-	fmt.Printf("Address: {%x}\n", acct.Address)
+	fmt.Printf("Address: %x\n", acct.Address)
 	return nil
 }</code></pre>
 先通过 AccountManager 拿到 keystore，调用 ImportPreSaleKey 导入账户
