@@ -400,7 +400,7 @@ dump 子命令可以移除一个或多个特定的区块,先根据区块号获�
 	var index int
 	for _, wallet := range stack.AccountManager().Wallets() {
 		for _, account := range wallet.Accounts() {
-			fmt.Printf("Account #%d: {%x} %s\n", index, account.Address, &account.URL)
+			fmt.Printf("Account #%d: %x %s\n", index, account.Address, &account.URL)
 			index++
 		}
 	}
