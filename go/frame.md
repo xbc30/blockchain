@@ -27,3 +27,12 @@
 
 * [strconv](https://www.jianshu.com/p/70e10c005430)
 > go官方内置的字符串和其他基本数据类型之间的转换
+
+* [logrus](https://github.com/sirupsen/logrus)
+> 可以打印当前的模块名和调用函数名，以及自定义高级功能
+
+* [protobuf](https://github.com/golang/protobuf)
+> 一种轻便高效的结构化数据存储格式，可以用于结构化数据序列化，很适合做数据存储或 RPC 数据交换格式
+
+* [go内置](https://studygolang.com/pkgdoc)
+> 包含go官方所有内置库
