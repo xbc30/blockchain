@@ -15,6 +15,8 @@
 ### reflect
 [Golang的反射reflect深入理解和示例](https://juejin.im/post/5a75a4fb5188257a82110544)
 
+[Go reflect 使用以及使用场景](https://studygolang.com/articles/25624?utm_source=tuicool&utm_medium=referral)
+
 ### G-M-P
 [Go调度器原理](https://mp.weixin.qq.com/s/enjlUh9ldfpLUdU1VQFkRA)
 
