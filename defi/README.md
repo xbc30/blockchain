@@ -38,3 +38,5 @@
 * [一文教你用 MakerDAO 和 Compound 赚利息](https://www.chainnews.com/articles/815477699742.htm)
 
 * [五分钟读懂永不崩盘的 DeFi 彩票游戏 PoolTogether](https://www.chainnews.com/articles/591512482032.htm)
+
+* [解读 DeFi 项目存续之道：代币化与收费模式](https://www.chainnews.com/articles/430512624894.htm)

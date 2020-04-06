@@ -23,6 +23,9 @@
 ### OSS
 [minio搭建高性能对象存储](https://github.com/minio/minio)
 
+### 类型转换
+[golang中的四种类型转换总结](https://studygolang.com/articles/27663#reply0)
+
 ### select
 [一文掌握 Go 语言 Select 的四大用法](https://mp.weixin.qq.com/s/-i-PoCTPuhRpd4cAKpNwuw)
 
