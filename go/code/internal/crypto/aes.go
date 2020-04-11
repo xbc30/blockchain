@@ -41,6 +41,7 @@ func AesCBCEncrypt(rawData,key []byte) ([]byte, error) {
 	cipherText := make([]byte,blockSize+len(rawData))
 	//block大小 16
 	iv := cipherText[:blockSize]
+	fmt.Println(string(cipherText))
 	if _, err := io.ReadFull(rand.Reader,iv); err != nil {
 		panic(err)
 	}
@@ -64,6 +65,7 @@ func AesCBCDncrypt(encryptData, key []byte) ([]byte,error) {
 		panic("ciphertext too short")
 	}
 	iv := encryptData[:blockSize]
+	fmt.Println(string(iv))
 	encryptData = encryptData[blockSize:]
 
 	// CBC mode always works in whole blocks.
@@ -103,10 +105,11 @@ func Dncrypt(rawData string,key []byte) (string,error) {
 
 func main()  {
 	rawData := []byte("Hello World")
-	key := []byte("asd123")
+	key := []byte("asdasd1234567890")
 
 	encString, err := Encrypt(rawData, key)
 	if err != nil {
-		fmt.Println(encString)
+		fmt.Println(err)
 	}
+	fmt.Println(encString)
 }
