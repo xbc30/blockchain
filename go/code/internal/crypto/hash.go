@@ -33,6 +33,7 @@ func main()  {
 	b := sha256.New()
 	io.WriteString(b, "Hello World")
 	fmt.Printf("%x\n", b.Sum(nil)) // a591a6d40bf420404a011733cfb7b190d62c65bf0bcda32b57b277d9ad9f146e
+	fmt.Printf("%x\n", b.Sum([]byte("Hello World"))) // a591a6d40bf420404a011733cfb7b190d62c65bf0bcda32b57b277d9ad9f146e
 
 	s := sha256.Sum256([]byte("Hello World"))
 	fmt.Printf("%x\n", s) // a591a6d40bf420404a011733cfb7b190d62c65bf0bcda32b57b277d9ad9f146e
