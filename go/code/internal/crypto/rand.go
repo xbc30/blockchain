@@ -25,5 +25,4 @@ func main() {
 		a := rand.Float32()
 		fmt.Println(a)
 	}
-
 }
