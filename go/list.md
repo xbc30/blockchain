@@ -8,6 +8,7 @@
 
 ### channel
 [弄懂 channel 基础](https://juejin.im/entry/58957b49b123db16a396f6ac)
+[Go的Channel很强大，理解其内在概念会让它更强大](https://mp.weixin.qq.com/s?__biz=MzAxMTA4Njc0OQ==&mid=2651439194&idx=2&sn=bdb31ad64ba5b00f7f025ba0e9d93004&chksm=80bb1ea8b7cc97be38de663c79f74b06c86ffa8dd2cd9fe851c2fe77e4fa61b2826df900a8f8&scene=126&sessionid=1586836894&key=caf03409094d441c8dcca2d2dd16a26cb1bb788c070b4e26356ac42c8a6d0589d5635f404107b014086738223c259a97277211b882cb3da90546c976422e3a4e81366d833ba83b44e15f6e9cff348a7d&ascene=1&uin=MTExODQ5NTYyNA%3D%3D&devicetype=Windows+10&version=62080079&lang=zh_CN&exportkey=A6EBp9HTFg%2F84Iz3%2FcDVnHA%3D&pass_ticket=JRLqBGqcGFGp70CM1no6O7f%2BXtBJ5LkM7WWtupF1F6W6BFF79RiA1Sr9rnrRyufr)
 
 ### Mutex
 [golang Mutex 互斥锁](https://juejin.im/post/5ca57ca9e51d452d1a071638)
