@@ -18,3 +18,14 @@
 
 ### BOM
 > BOM是为UTF-16和UTF-32准备的，用户标记字节序（byte order）
+
+### zlib gzip deflate
+> deflate(RFC1951):一种压缩算法，使用LZ77和哈弗曼进行编码；
+
+> zlib(RFC1950):一种格式，是对deflate进行了简单的封装，他也是一个实现库(delphi中有zlib,zlibex)
+
+> gzip(RFC1952):一种格式，也是对deflate进行的封装。
+  
+> gzip = gzip头 + deflate编码的实际内容 + gzip尾
+
+> zlib = zlib头 + deflate编码的实际内容 + zlib尾
