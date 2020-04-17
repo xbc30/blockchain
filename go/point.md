@@ -29,3 +29,8 @@
 > gzip = gzip头 + deflate编码的实际内容 + gzip尾
 
 > zlib = zlib头 + deflate编码的实际内容 + zlib尾
+
+### routine runtime
+> 协程 调度器
+
+### channel+select context
