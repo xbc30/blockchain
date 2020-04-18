@@ -1,8 +1,8 @@
-package main
+package io
 
 // https://segmentfault.com/a/1190000015591319
 
-// 流式IO 文件IO 缓冲IO 网络IO 格式化IO
+// 流式IO 文件IO 缓冲IO 网络IO 格式化IO(fmt.Printf)
 
 import (
 	"fmt"
