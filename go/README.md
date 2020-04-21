@@ -10,6 +10,10 @@
 * web gin/beego
 
 ### frame
-> Docker、etcd、grpc-go、prometheus、consul、influxdb、Kubernetes
+> go实用工具和依赖库
 
 ### list
+> go常见知识点
+
+### point
+> 容易混淆的点

@@ -36,3 +36,24 @@
 
 * [go内置](https://studygolang.com/pkgdoc)
 > 包含go官方所有内置库
+
+* [gopsutil](https://github.com/shirou/gopsutil)
+> 以帮助我们方便地获取各种系统和硬件信息
+
+* [cron](https://github.com/robfig/cron)
+> 可以执行定时的、周期性的任务
+
+* [etcd](https://github.com/etcd-io/etcd)
+> 用于分布式系统最关键数据的分布式可靠键值存储
+
+* [k8s](https://kubernetes.io/)
+> 用于自动部署，扩展和管理容器化应用程序的开源系统
+
+* [influxdb](https://github.com/influxdata/influxdb)
+> 可扩展的数据存储，用于指标，事件和实时分析
+
+* [consul](https://www.consul.io)
+> 微服务间的 TCP/IP，负责服务之间的网络调用、限流、熔断和监控
+
+* [Prometheus](https://prometheus.io/)
+> 开源监控解决方案
