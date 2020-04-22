@@ -57,3 +57,6 @@
 
 * [Prometheus](https://prometheus.io/)
 > 开源监控解决方案
+
+* [MinIO](https://github.com/minio/minio)
+> 高性能，Kubernetes友好的对象存储
