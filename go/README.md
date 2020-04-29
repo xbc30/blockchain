@@ -1,5 +1,7 @@
 ## GO
 
+> 20.04.23后不再更新，转移到[github.com/xbc30/learning-golang](https://github.com/xbc30/learning-golang)
+
 ### 为并发而生
 ```text
 Goroutine 非常轻量，主要体现在以下两个方面：

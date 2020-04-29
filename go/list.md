@@ -13,9 +13,6 @@
 * [Go调度器原理](https://mp.weixin.qq.com/s/enjlUh9ldfpLUdU1VQFkRA)
 * [golang中的runtime包教程](https://www.codercto.com/a/19118.html)
 
-### OSS
-[minio搭建高性能对象存储](https://github.com/minio/minio)
-
 ### 类型转换
 [golang中的四种类型转换总结](https://studygolang.com/articles/27663#reply0)
 
