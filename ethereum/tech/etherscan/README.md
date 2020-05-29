@@ -21,3 +21,5 @@ func CreateAddress(b common.Address, nonce uint64) common.Address {
 
 #### Swarm Source
 > 部署合同后，源代码随后存储在Swarm中(分散式数据存储和分发),"bzzr地址"是合约的文件ID，编译器将元数据文件的Swarm哈希附加到每个合约的字节码末尾，以便您可以以经过身份验证的方式检索文件，而无需求助于集中式数据提供程序
+
+
